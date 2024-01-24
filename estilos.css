@@ -1,0 +1,19 @@
+.sacola{
+    background-image: url(mirrorfashion/img/sacola.png);
+    background-repeat: no-repeat;
+    background-position: top right;
+    font-size: 14px;
+    padding-right: 35px;
+    text-align: right;
+    width: 140px;
+}
+.menuopcoes ul{
+    font-size: 15px;
+}
+.menuopcoes a{
+    color: #003366;
+}
+.body{
+    color: #333333;
+    font-size: "Lucinda Sans Unicode", "Lucinda Grande", "sans-sarif";
+}
