@@ -1,4 +1,4 @@
-@media (min-width: 630px) {
+@media (min-width: 500px) {
     .produto{
         position: relative;
         padding-left: 40%;
@@ -21,7 +21,17 @@
     .cores label::after{
         position: static;
         float: left;
-        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .fieldset{
+        display: inline-block;
+        vertical-align: top;
+        margin: 1em 0;
+        min-width: 240px;
+        width: 45%;
+    }
+    .detalhes{
+        font-size: 1.2em;
     }
 
 }

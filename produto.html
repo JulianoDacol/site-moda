@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="estilos.css">
     <link rel="stylesheet" href="produto.css">
     <link rel="stylesheet" href="produtomobile.css">
+    <link rel="stylesheet" href="./bootstrap-5.3.2-dist/css/bootstrap.css">
 
 </head>
 
@@ -35,40 +36,74 @@
         </nav>
     </header>
 
-<div class="container">
-    <div class="produto">
-        <h1>Fuzzy Cardigan</h1>
-        <p>por apenas R$ 129,90</p>
-        
-        <form>
-            <fieldset class="cores">
-                <legend>Escolha a cor:</legend>
-                
-                <input type="radio" name="cor" value="verde" id="verde" checked>
-                <label for="verde">
-                    <img src="./mirrorfashion/img/produtos/foto1-verde.png" alt="Produto na cor verde">
-                </label>
-                
-                <input type="radio" name="cor" value="rosa" id="rosa" checked>
-                <label for="rosa">
-                    <img src="./mirrorfashion/img/produtos/foto1-rosa.png" alt="Produto na cor rosa">
-                </label>
+    <div class="container">
+        <div class="produto">
+            <h1>Fuzzy Cardigan</h1>
+            <p>por apenas R$ 129,90</p>
 
-                <input type="radio" name="cor" value="azul" id="azul" checked>
-                <label for="azul">
-                    <img src="./mirrorfashion/img/produtos/foto1-azul.png" alt="Produto na cor azul">
-                </label>
-            </fieldset>
-            
-            <button class="comprar">Comprar</button>
-        </form>
+            <form>
+                <fieldset class="cores">
+                    <legend>Escolha a cor:</legend>
+
+                    <input type="radio" name="cor" value="verde" id="verde" checked>
+                    <label for="verde">
+                        <img src="./mirrorfashion/img/produtos/foto1-verde.png" alt="Produto na cor verde">
+                    </label>
+
+                    <input type="radio" name="cor" value="rosa" id="rosa" checked>
+                    <label for="rosa">
+                        <img src="./mirrorfashion/img/produtos/foto1-rosa.png" alt="Produto na cor rosa">
+                    </label>
+
+                    <input type="radio" name="cor" value="azul" id="azul" checked>
+                    <label for="azul">
+                        <img src="./mirrorfashion/img/produtos/foto1-azul.png" alt="Produto na cor azul">
+                    </label>
+                </fieldset>
+
+                <fieldset class="tamanhos">
+                    <legend>Escolha o Tamanho:</legend>
+
+                    <input type="range" min="36" max="46" value="42" step="2" name="tamanho" id="tamanho">
+                </fieldset>
+
+                <button class="comprar">Comprar</button>
+            </form>
+        </div>
+        <div class="detalhes">
+            <h2>Detalhes do Produto</h2>
+
+            <p>Esse [e o melhor casaco de Cardigan que voce ja viu. Exelente material italiano com estampa desenhada
+                pelos artesaos da comunidade de krotor nas ilhas gregas. Compre ja e receba hoje mesmo pela nossa
+                entrega a jatao.</p>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Modelo</td>
+                            <td>Cardiga 7845</td>
+                        </tr>
+                        <tr>
+                            <td>Material</td>
+                            <td>Algodao e poliester</td>
+                        </tr>
+                        <tr>
+                            <td>Cores</td>
+                            <td>Azul, Rosa e Verde</td>
+                        </tr>
+                        <tr>
+                            <td>lavagem</td>
+                            <td>Lavar a Mao</td>
+                        </tr>
+                    </thead>
+                </table>
+        </div>
     </div>
-</div>
-    
+
     <footer>
         <div class="container">
             <img src="./mirrorfashion/img/logo-rodape.png" alt="Logo da Mirror Fashion">
-            
+
             <ul class="Social">
                 <li><a href="https://facebook.com/mirrorfashion">facebook</a></li>
                 <li><a href="https://twitter.com/mirrorfashion">twitter</a></li>
