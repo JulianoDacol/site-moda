@@ -48,95 +48,119 @@
     </div>
 
     <div class="container">
+        <div class="col-mb-4">
 
-        <div class="card mb-3">
-            <div class="card-header">
-                <h2>Sua compra</h2>
-            </div>
+            <div class="card mb-3">
+                <div class="card-header">
+                    <h2>Sua compra</h2>
+                </div>
 
-            <div class="card-body">
-                <img src="./mirrorfashion/img/produtos/foto1-verde.png" alt="Fuzzy Cardigan" class="img-thumbnail mb-3">
-                <dl>
-                    <dt>Produto</dt>
-                    <dd>Fuzzy Cardigan</dd>
+                <div class="card-body">
 
-                    <dt>Cor</dt>
-                    <dd>Verde</dd>
-
-                    <dt>Tamanho</dt>
-                    <dd>40</dd>
-
-                    <dt>Preço</dt>
-                    <dd>R$ 129,90</dd>
-                </dl>
-            </div>
-        </div>
-    </div>
-
-    <form>
-
-        <fieldset>
-            <legend>Dados pessoais</legend>
-
-            <div class="form-group">
-                <label for="nome">Nome Completo</label>
-                <input type="text" class="form-control" id="nome" name="nome" autofocus>
-            </div>
-
-            <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" class="form-control" id="email" name="email" placeholder="email@exemplo.com">
-            </div>
-
-            <div>
-                <label for="cpf">CPF</label>
-                <input type="text" class="form-group" id="cpf" name="cpf" placeholder="123.456.789-00">
-            </div>
-
-            <div class="form-group custom-control custom-checkbox">
-                <input type="checkbox" class="custom-control-input" id="newsletter" value="sim" checked>
-                <label class="custom=control-label" for="newsletter">
-                    Quero receber Newsletter da Mirror Fashion
-                </label>
-            </div>
-        </fieldset>
-
-        <fieldset>
-            <legend>Cartão de Crédito</legend>
-
-            <div class="form-group">
-                <label for="numero-cartao">Número - CVV</label>
-                <input type="text" class="form-control" id="numero-cartao" name="numero-cartao">
-            </div>
-
-            <div class="form-group">
-                <div class="input-group mb-3">
-                    <div class="input-group-prepend">
-                        <label class="input-group-text" for="bandeira-cartao">Bandeira Cartão</label>
+                    <div class="card-body">
+                        <img src="./mirrorfashion/img/produtos/foto1-verde.png" alt="Fuzzy Cardigan"
+                            class="img-thumbnail mb-3">
+                        <dl>
+                            <dt>Produto</dt>
+                            <dd>Fuzzy Cardigan</dd>
+                            
+                            <dt>Cor</dt>
+                            <dd>Verde</dd>
+                            
+                            <dt>Tamanho</dt>
+                            <dd>40</dd>
+                            
+                            <dt>Preço</dt>
+                            <dd id="preco">R$ 129,90</dd>
+                        </dl>
                     </div>
-                    <select class="custom-select" id="bandeira-cartao">
-                        <option disabled selected>Seleciona uma opção...</option>
-                        <option value="Master">MasterCard</option>
-                        <option value="visa">VISA</option>
-                        <option value="amex">American Express</option>
-                    </select>
+                </div>                    
+            </div>
+
+            <div class="card mb-03">
+                <div class="card-body">
+
+                    <div class="form-group">
+                        <label for="qtd">Quantidade:</label>
+                        <input type="number" id="qtd" min="1" max="99" value="1" class="form-control">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="total">Total:</label>
+                        <output id="total" class="form-control">R$ 129,90</output>
+                    </div>
                 </div>
             </div>
 
-            <div class="form-group">
-                <label for="validade-cartao">Validade</label>
-                <input type="month" class="form-control" id="validade-cartao" name="validade-cartao">
-            </div>
-        </fieldset>
+        </div>
+    </div>
+    
 
-        <button type="submit" class="btn btn-primary">
-            <span class="oi oi-thumb-up"></span>
-            Confirmar Pedido
-        </button>
+        <form>
 
-    </form>
-    <script type="text/javascript" src="./mirrorfashion/js/jquery.js"></script>
-    <script type="text/javascript" src="./mirrorfashion/js/bootstrap.js"></script>
+            <fieldset>
+                <legend>Dados pessoais</legend>
+
+                <div class="form-group">
+                    <label for="nome">Nome Completo</label>
+                    <input type="text" class="form-control" id="nome" name="nome" autofocus>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="email@exemplo.com">
+                </div>
+
+                <div>
+                    <label for="cpf">CPF</label>
+                    <input type="text" class="form-group" id="cpf" name="cpf" placeholder="123.456.789-00">
+                </div>
+
+                <div class="form-group custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="newsletter" value="sim" checked>
+                    <label class="custom=control-label" for="newsletter">
+                        Quero receber Newsletter da Mirror Fashion
+                    </label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Cartão de Crédito</legend>
+
+                <div class="form-group">
+                    <label for="numero-cartao">Número - CVV</label>
+                    <input type="text" class="form-control" id="numero-cartao" name="numero-cartao">
+                </div>
+
+                <div class="form-group">
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <label class="input-group-text" for="bandeira-cartao">Bandeira Cartão</label>
+                        </div>
+                        <select class="custom-select" id="bandeira-cartao">
+                            <option disabled selected>Seleciona uma opção...</option>
+                            <option value="Master">MasterCard</option>
+                            <option value="visa">VISA</option>
+                            <option value="amex">American Express</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="validade-cartao">Validade</label>
+                    <input type="month" class="form-control" id="validade-cartao" name="validade-cartao">
+                </div>
+            </fieldset>
+
+            <button type="submit" class="btn btn-primary">
+                <span class="oi oi-thumb-up"></span>
+                Confirmar Pedido
+            </button>
+
+        </form>
+        <script type="text/javascript" src="./mirrorfashion/js/jquery.js"></script>
+        <script type="text/javascript" src="./mirrorfashion/js/bootstrap.js"></script>
+        <script type="text/javascript" src="./total.js"></script>
 </body>
 
 </html>
