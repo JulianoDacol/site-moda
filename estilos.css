@@ -230,3 +230,9 @@ footer .container{
     background-color: #393939;
     box-shadow: 1px 0 20px rgba(200, 200, 120, 0.9);
 }
+body {
+    font-family: 'PT Sans', sans-serif;
+}
+.painel h2{
+    font-family: 'Bad Script', sans-serif;
+}
